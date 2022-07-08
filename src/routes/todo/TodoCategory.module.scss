@@ -1,0 +1,42 @@
+.wrap {
+  margin-bottom: 30px;
+
+  .title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #AFB2C6;
+  }
+
+  .cateWrap {
+    .category {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 150px;
+      height: 80px;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 2px 2px 4px rgba(#ddd, 0.3);
+
+      .cateLeng {
+        font-size: 12px;
+        color: #AAABBC;
+      }
+
+      .cateTit {
+        margin-bottom: 8px;
+        font-size: 17px;
+        font-weight: 600;
+        color: #424152;
+      }
+
+      .cateBar {
+        width: 100%;
+        height: 3px;
+        background-color: #ddd;
+      }
+    }
+  }
+}

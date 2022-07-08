@@ -1,0 +1,18 @@
+.wrap {
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    margin-left: 0;
+  }
+
+  .right {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  .icon {
+    width: 20px;
+    fill: #A3A3B4;
+  }
+}
