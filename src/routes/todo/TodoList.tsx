@@ -7,10 +7,6 @@ const TodoList = () => {
       <h2 className={styles.title}>TODAY&apos;S TASKS</h2>
       <ul className={styles.todoList}>
         <Todos />
-        <Todos />
-        <Todos />
-        <Todos />
-        <Todos />
       </ul>
     </main>
   )

@@ -1,10 +1,19 @@
+import { useRecoil } from 'hooks/state'
+import { menuClick } from 'recoil/todo'
+
 import { LeftArrow, Templates, Category, Analytics, Setting } from 'assets/svgs'
 import styles from './gnb.module.scss'
 
 const GNB = () => {
+  const [, setMenuClicked] = useRecoil(menuClick)
+
+  const menuCloseHandler = () => {
+    setMenuClicked((prev) => !prev)
+  }
+
   return (
     <nav className={styles.wrap}>
-      <button type='button' className={styles.closeBtn} aria-label='close'>
+      <button type='button' className={styles.closeBtn} aria-label='close' onClick={menuCloseHandler}>
         <LeftArrow className={styles.icon} />
       </button>
       <div className={styles.profileWrap} />
